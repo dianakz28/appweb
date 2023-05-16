@@ -1,0 +1,20 @@
+<ons-page id="helloworld-page">
+  <ons-toolbar>
+    <div class="center"></div>
+    <div class="right">
+      <ons-toolbar-button>
+        <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <p style="text-align: center">
+    <ons-button>Click me!</ons-button>
+  </p>
+
+  <script>
+    ons.getScriptPage().onInit = function() {
+      console.log('This is a lifecycle hook!', this);
+    };
+  </script>
+</ons-page>
