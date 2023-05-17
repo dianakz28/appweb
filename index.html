@@ -1,0 +1,80 @@
+<ons-page id="helloworld-page">
+<ons-page>
+  <ons-toolbar>
+    <div class="center">Myapp</div>
+  </ons-toolbar>
+
+
+
+  <ons-tabbar swipeable position="auto">
+    <ons-tab page="Home.html" label="Home" icon="ion-ios-home, material:md-home" badge="10" active>
+    </ons-tab>
+    <ons-tab page="settings" label="settings" icon="md-settings" active-icon="md-face">
+    </ons-tab>
+  </ons-tabbar>
+</ons-page>
+
+<template id="Home.html">
+  <ons-page id="Home">
+    <p style="text-align: center;">
+      Hola! Con esta app presento mi proyecto llamado "Happy Zappi"
+      Es un nuevo restaurante en Madrid de comida casera ucraniana y española, pero lo que
+      tiene de particular con otros restaurantes es el cuidado del medio ambiente, 
+      nuestros repartidores se trasladan en bici y el empaquetamiento es de cartón,
+      no utilizamos ningún tipo de pláticos. 
+      La inauguración es el día 23/05/2023 a la calle Serrano 38. 
+    </p>
+    
+  </ons-page>
+</template>
+
+ 
+
+
+<ons-page>
+  <ons-toolbar>
+    <div class="center">Myapp</div>
+  </ons-toolbar>
+
+ <ons-tabbar swipeable position="auto">
+    <ons-tab page="Home.html" label="Home" icon="ion-ios-home, material:md-home" badge="10" active>
+    </ons-tab>
+    <ons-tab page="Settings.html" label="Settings" icon="md-settings" active-icon="md-face">
+    </ons-tab>
+  </ons-tabbar>
+  
+</template>
+<template id="Settings.html">
+  <ons-page id="Settings">
+    <p style="text-align: center;">
+     ·Usuario: Diiaanaa.kz
+    </p>
+    <p style="text-align: center;">
+     ·Teléfono: 846582908
+    </p>
+    <p style="text-align: center;">
+     ·Correo: ddiiaanaa.kz@gmail.com
+    </p>
+    <p style="text-align: center;">
+     ·Ubicación: Plaza elíptica
+    </p>
+  </ons-page>
+</template>
+
+
+
+  <ons-toolbar>
+    <div class="center"></div>
+    <div class="right">
+      <ons-toolbar-button>
+        <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  <ons-button modifier="Click Here!">Click Here!</ons-button>
+  
+  <script>
+    ons.getScriptPage().onInit = function() {
+      console.log('This is a lifecycle hook!', this);
+    };
+  </script>
+</ons-page>
